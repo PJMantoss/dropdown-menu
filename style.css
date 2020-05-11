@@ -45,3 +45,17 @@ li, a {
     color: rgb(1, 63, 1);
     transition: .30s ease-in;
 }
+
+.sub {
+    position: relative;
+    top: 0;
+    left: -41px;
+    width: 170px;
+    border-left: none !important;
+    border-bottom: 1px solid white !important;
+}
+
+.sub:last-child {
+    border: none !important;
+}
+
