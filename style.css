@@ -72,3 +72,32 @@ li, a {
     color: white;
 }
 
+.main-nav li ul li:hover,
+.main-nav li ul li ul li:hover {
+    background: white;
+    transition: .30s ease-in-out;
+}
+
+.main-nav li ul li:hover a,
+.main-nav li ul li ul li:hover a {
+    color: rgb(1, 63, 1);
+    transition: .30s ease-in-out;
+}
+
+/*Submenu*/
+.maindrop .maindrop .dropdown .sub {
+    position: relative;
+    top: 0;
+    width: 165px;
+    left: 25px;
+}
+
+.maindrop .maindrop .dropdown {
+    position: absolute;
+    width: 150px;
+    left: 120px;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .30s ease-out;
+}
