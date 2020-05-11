@@ -3,3 +3,7 @@ nav {
     background-color: transparent;
 }
 
+li, a {
+    list-style: none;
+    text-decoration: none;
+}
