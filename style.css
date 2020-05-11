@@ -6,4 +6,41 @@ nav {
 li, a {
     list-style: none;
     text-decoration: none;
+    color: white;
+}
+
+.dropdown {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    width: 150px;
+    top: 40px;
+    transition: .30s ease-out;
+}
+
+.main-nav li {
+    float: left;
+    background-color: rgb(1, 63, 1);
+    padding: 5px;
+    border-left: 1px solid white;
+}
+
+.main-nav li:first-child {
+    border: none;
+}
+
+.main-nav li a {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2px 20px;
+}
+
+.main-nav li:hover {
+    background: white;
+    transition: .30s ease-in;
+}
+
+.main-nav li:hover a{
+    color: rgb(1, 63, 1);
+    transition: .30s ease-in;
 }
