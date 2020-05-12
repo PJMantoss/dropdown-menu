@@ -150,6 +150,11 @@ li, a {
     .checkbtn {
         display: block;
     }
+
+    .toggle + a,
+    .main-nav {
+        display: none;
+    }
 /*
     .main-nav {
         position: fixed;
