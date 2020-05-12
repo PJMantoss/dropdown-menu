@@ -151,9 +151,30 @@ li, a {
         display: block;
     }
 
+    nav {
+        margin: 0;
+    }
+
     .toggle + a,
     .main-nav {
         display: none;
+    }
+
+    .toggle{
+        display: block;
+        line-height: 80px;
+        padding: 0 22px;
+        font-weight: bold;
+        background: rgb(1, 63, 1);
+        color: white;
+        font-size: 22px;
+        border: none;
+        text-decoration: none;
+    }
+
+    #check:checked ~ ul {
+        display: block;
+        left: 0;
     }
 /*
     .main-nav {
@@ -186,9 +207,6 @@ li, a {
         color: white;
     }
 */
-    #check:checked ~ .main-nav {
-        left: 0;
-    }
 }
 
 /*
