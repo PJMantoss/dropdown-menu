@@ -124,10 +124,6 @@ li, a {
     transition: .30s ease-in-out;
 }
 
-.toggle, #drop {
-    display: none;
-}
-
 /*Submenu*/
 .maindrop .maindrop .dropdown .sub {
     position: relative;
@@ -155,12 +151,12 @@ li, a {
         margin: 0;
     }
 
-    .toggle + a,
+    .checkbtn + a,
     .main-nav {
         display: none;
     }
 
-    .toggle{
+    .checkbtn{
         display: block;
         line-height: 80px;
         padding: 0 22px;
