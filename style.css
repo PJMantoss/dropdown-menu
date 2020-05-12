@@ -77,54 +77,6 @@ li, a {
     display: none;
 }
 
-@media (max-width: 860px){
-    .checkbtn {
-        display: block;
-    }
-
-    .main-nav {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        margin: auto;
-        top: 30px;
-        left: -100%;
-        background: rgb(0, 2, 0);
-        transition: .3s all;
-    }
-
-    .main-nav > li {
-        float: none;
-        display: block;
-        margin: 40px auto;
-        width: 200px;
-        background: none;
-        border: none;
-        text-align: center;
-    }
-
-    .main-nav > li {
-        font-size: 20px;
-    }
-
-    a:hover {
-        background: none;
-        color: white;
-    }
-
-    #check:checked ~ .main-nav {
-        left: 0;
-    }
-
-    .main-nav .maindrop:hover {
-        background: none;
-    }
-
-    .main-nav .maindrop:hover a {
-        color: white;
-    }
-}
-
 /*First Dropdown*/
 .sub {
     position: relative;
@@ -172,6 +124,10 @@ li, a {
     transition: .30s ease-in-out;
 }
 
+.toggle, #drop {
+    display: none;
+}
+
 /*Submenu*/
 .maindrop .maindrop .dropdown .sub {
     position: relative;
@@ -180,16 +136,68 @@ li, a {
     left: 78px;
 }
 
+.maindrop .maindrop .dropdown {
+    position: absolute;
+    width: 150px;
+    left: 120px;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .30s ease-out;
+}
+
+@media (max-width: 860px){
+    .checkbtn {
+        display: block;
+    }
+/*
+    .main-nav {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        margin: auto;
+        top: 30px;
+        left: -100%;
+        background: rgb(1, 32, 1);
+        transition: .3s all;
+    }
+
+    .main-nav > li {
+        float: none;
+        display: block;
+        margin: 40px auto;
+        width: 200px;
+        background: none;
+        border: none;
+        text-align: center;
+    }
+
+    .main-nav > li {
+        font-size: 20px;
+    }
+
+    a:hover {
+        background: none;
+        color: white;
+    }
+*/
+    #check:checked ~ .main-nav {
+        left: 0;
+    }
+}
+
+/*
 @media (max-width: 860px){
     .dropdown {
-        position: static;
+        position: absolute;
         width: 130px;
         left: 10px;
         top: 20px;
         z-index: 1;
     }
 
-    .sub {
+     .sub {
+        display: block;
         width: 100%;
         left: 0;
         top: 0;
@@ -208,13 +216,4 @@ li, a {
         left: 40px;
     }
 }
-
-.maindrop .maindrop .dropdown {
-    position: absolute;
-    width: 150px;
-    left: 120px;
-    top: 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: .30s ease-out;
-}
+*/
