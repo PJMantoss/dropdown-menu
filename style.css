@@ -143,10 +143,6 @@ li, a {
 }
 
 @media (max-width: 860px){
-    .checkbtn {
-        display: block;
-    }
-
     nav {
         margin: 0;
     }
@@ -158,18 +154,20 @@ li, a {
 
     .checkbtn{
         display: block;
-        line-height: 80px;
-        padding: 0 22px;
-        font-weight: bold;
-        background: rgb(1, 63, 1);
-        color: white;
-        font-size: 22px;
-        border: none;
-        text-decoration: none;
     }
 
-    #check:checked ~ ul {
-        display: block;
+    .main-nav {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        margin: auto;
+        top: 30px;
+        left: -100%;
+        background: rgb(1, 32, 1);
+        transition: .3s all;
+    }
+
+    #check:checked + ul {
         left: 0;
     }
 /*
