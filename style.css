@@ -73,10 +73,6 @@ li, a {
     display: none;
 }
 
-.main-nav li:hover > .dropdown {
-    display: inherit;
-} 
-
 #check {
     display: none;
 }
@@ -147,7 +143,10 @@ li, a {
 }
 
 @media (max-width: 860px){
-/*
+    .checkbtn {
+        display: block;
+    }
+
     .main-nav {
         position: fixed;
         width: 100%;
@@ -178,40 +177,8 @@ li, a {
         color: white;
     }
 
-    #check:checked ~ ul {
+    #check:checked ~ .main-nav {
         left: 0;
     }
-*/
+
 }
-
-/*
-@media (max-width: 860px){
-    .dropdown {
-        position: absolute;
-        width: 130px;
-        left: 10px;
-        top: 20px;
-        z-index: 1;
-    }
-
-     .sub {
-        display: block;
-        width: 100%;
-        left: 0;
-        top: 0;
-        border: none !important;
-    }
-
-    .main-nav li ul li a,
-    .main-nav li ul li ul li a {
-        font-size: 16px;
-    }
-
-    .maindrop .maindrop .dropdown .sub {
-        position: relative;
-        top: 0;
-        width: 130px;
-        left: 40px;
-    }
-}
-*/
