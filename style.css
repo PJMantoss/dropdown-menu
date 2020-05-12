@@ -73,6 +73,10 @@ li, a {
     display: none;
 }
 
+.main-nav li:hover > .dropdown {
+    display: inherit;
+} 
+
 #check {
     display: none;
 }
@@ -143,33 +147,6 @@ li, a {
 }
 
 @media (max-width: 860px){
-    nav {
-        margin: 0;
-    }
-
-    .checkbtn + a,
-    .main-nav {
-        display: none;
-    }
-
-    .checkbtn{
-        display: block;
-    }
-
-    .main-nav {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        margin: auto;
-        top: 30px;
-        left: -100%;
-        background: rgb(1, 32, 1);
-        transition: .3s all;
-    }
-
-    #check:checked + ul {
-        left: 0;
-    }
 /*
     .main-nav {
         position: fixed;
@@ -199,6 +176,10 @@ li, a {
     a:hover {
         background: none;
         color: white;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
     }
 */
 }
