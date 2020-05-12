@@ -115,6 +115,14 @@ li, a {
     #check:checked ~ .main-nav {
         left: 0;
     }
+
+    .main-nav .maindrop:hover {
+        background: none;
+    }
+
+    .main-nav .maindrop:hover a {
+        color: white;
+    }
 }
 
 /*First Dropdown*/
@@ -174,19 +182,15 @@ li, a {
 
 @media (max-width: 860px){
     .dropdown {
-        position: absolute;
+        position: static;
         width: 130px;
         left: 10px;
         top: 20px;
         z-index: 1;
     }
 
-    .sub.maindrop .dropdown {
-        position: relative;
-    }
-
     .sub {
-        width: 150px;
+        width: 100%;
         left: 0;
         top: 0;
         border: none !important;
